@@ -1,0 +1,835 @@
+/* ========COMMON======== */
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* ========HEADER======== */
+
+.header {
+    background-image: url(../images/football_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-color: #000000;
+    height: 960px;
+    padding-top: 45px;
+
+}
+
+.header::after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.header-wrapper {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.surface-logo-text {
+    fill: #ffffff;
+    text-align: center;
+}
+
+.welcome-title {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-1 {
+    text-align: left;
+}
+
+.title-second {
+    padding-left: 20%;
+    display: block;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.button {
+    background-color: #5e42b0;
+    border-radius: 36px;
+    width: 315px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+}
+
+.button:nth-child(n+2) {
+    margin-left: 50px;
+}
+
+.button-download {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.button-download-icon {
+    width: 40px;
+    fill:#ffffff;
+}
+
+.button-label {
+    text-transform: uppercase;
+    color: white;
+    line-height: 15px;
+    font-size: 14px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.download-device, .download {
+    margin: 0;
+}
+
+.download-device {
+    font-weight: bold;
+}
+
+/* ========CONTENT======== */
+
+.kid-sport {
+    overflow: hidden;
+    margin-top: 0;
+    position: relative;
+}
+
+.kid-sport-image {
+    max-width: 100%;
+    position: absolute;
+    left: calc(50% - 566px);
+    top: 0;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.text-item-wrapper {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.kid-sport-title {
+    max-width: 1560px;
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: calc(50% + 50px);
+    position: relative;
+}
+
+.specification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specification-item {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.item-title {
+    padding-left: calc(50% + 50px);
+    display: flex;
+    max-width: 1560px;
+    margin: 0 auto;
+    box-sizing:border-box;
+}
+
+.number-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+.number-item-title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 20px;
+    background-color: #5e42b0;
+    border-radius: 10px;
+}
+
+.number-item::after {
+    background-color: #efefef;
+}
+
+.text-item-title{
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+p {
+    margin: 0;
+}
+
+.text-item-description {
+    font-size: 24px;
+    margin: 0 auto;
+    padding-left: calc(50% + 50px);
+}
+
+.text-item-title {
+    font-size: 36px;
+    color: #c1c1c1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.specification-item:nth-child(2) {
+    background-color: #f6f4fa;
+}
+
+.specification-item:nth-child(3) {
+    background-color: #5e42b0;
+}
+
+.kid-sport-image-basket {
+    left: 40%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
+
+.item-title-basket {
+    padding-left: 0;
+    display: flex;
+}
+
+.text-item-description-basket {
+    padding-left: 0;
+    padding-right: calc(50% + 60px);
+}
+
+.text-title {
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin-top: 230px;
+    padding-left: 130px;
+    align-self: center;
+}
+
+.properties {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.property {
+    margin: 0;
+    padding: 0;
+}
+.property-item {
+    list-style: none;
+    display: flex;
+}
+
+.property-item-images {
+    max-width: 50%;
+    font-size: 0;
+}
+
+.property-item-number {
+    padding: 2.5em 3em;
+    background-color: #5e42b0;
+    font-size: 24px;
+    color: white;
+    margin-top: 120px;
+    position: absolute;
+    left: calc(50% - 100px);
+    margin-right: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.property-item-number::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 27px;
+    background-color: #8f7bc8;
+}
+
+.property-item-text {
+    margin-left: 130px;
+    margin-right: 15px;
+    margin-top: 140px;
+    max-width: 50%;
+    max-width: 780px;
+}
+
+.property-item-text-title {
+    font-size: 80px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.property-image {
+    max-width: 100%;
+}
+
+.property-item-text-description {
+    font-size: 24px;
+    margin-top: 80px;
+}
+
+.property-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.property-item-text-reverse {
+    margin-right: auto;
+    padding-right: 115px;
+    margin-left: 115px;
+}
+
+/* ========FOOTER======== */
+
+.footer {
+    background-image: url(../images/game_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-color: #000000;
+}
+
+.footer-wrapper {
+    max-width: 1560px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.footer::after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.button-app {
+    width: 100px;
+    z-index: 3;
+    color: white;
+    background-color: #5e42b0;
+    fill: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.button-download-app {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 230px;
+    padding-bottom: 150px;
+}
+
+.button-download-label {
+    text-transform: uppercase;
+    line-height: 60px;
+    padding-left: 25px;
+}
+
+.button-download-description {
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.button-description {
+    color: #a496ca;
+    font-size: 30px;
+}
+
+.logo-footer {
+    padding-top: 260px;
+    padding-bottom: 45px;
+}
+
+@media (max-width: 640px) {
+    /* ========HEADER======== */
+
+    .surface-logo-text {
+        width: 130px;
+    }
+
+    .header {
+        background-image: url(../images/football_767.jpg);
+        height: 570px;
+        padding-top: 30px;
+    }
+
+    .welcome-title {
+        padding-top: 100px;
+        padding-bottom: 85px;
+        font-size: 28px;
+    }
+
+    .title-second {
+        padding-left: 20%;
+    }
+
+    .button-list {
+        display: block;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button:nth-child(n+2) {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .button {
+        background-color: #5e42b0;
+        border-radius: 36px;
+        width: 100%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .button-download {
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .button-download-icon {
+        width: 20px;
+    }
+
+    .button-label {
+        font-size: 8px;
+        line-height: 10px;
+        padding-left: 10px;
+    }
+
+    .kid-sport {
+       width: 100%;
+    }
+
+    .kid-sport-image {
+        left: calc(50% - 192px/2);
+        margin-top: 0;
+        top: 80px;
+    }
+
+    .kid-sport-title {
+        font-size: 50px;
+        padding: 20px;
+        padding-bottom: 250px;
+    }
+
+    .specification-item {
+        padding: 60px 20px 55px 20px;
+    }
+
+    .specification-item:nth-child(1) {
+        background-color: #fafafa;
+        padding-top: 85px;
+    }
+
+    .specification-item:nth-child(2) {
+        background-color: #f5f4f9;
+    }
+
+    .item-title {
+        padding-left: 0;
+    }
+
+    .text-item-description {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    .text-item-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .number-item-title {
+        font-size: 14px;
+    }
+
+    .text-item-title {
+        font-size: 23px;
+    }
+
+    .text-item-description-basket {
+        padding-right: 0;
+    }
+
+    .section-be-active {
+        display: block;
+    }
+
+    /* ========CONTENT======== */
+
+    .kid-sport-image-basket {
+        left: calc(50% - 302px/2);
+        top: 80px;
+        margin-top: 0;
+    }
+
+    .property-item {
+        display: block;
+    }
+
+    .property-image {
+        max-width: 100%;
+    }
+
+    .property-item-images {
+        max-width: 100%;
+    }
+
+    .property-item-text {
+        margin-top: 35px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 75px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+    }
+
+    .property-item-text-title {
+        font-size: 28px;
+    }
+
+    .property-item-text-description {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .property-item-number {
+        left: 20px;
+        margin-top: -80px;
+        font-size: 14px;
+    }
+
+    /* ========FOOTER======== */
+
+    .button-download-description {
+        font-size: 32px;
+    }
+
+    .button-description {
+        font-size: 14px;
+    }
+
+    .button-download-app {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+
+    .button-app {
+        margin-bottom: 55px;
+    }
+
+    .button-description {
+        line-height: 20px;
+    }
+
+    .button-download-label-footer {
+        padding-left: 0;
+    }
+
+    .logo-footer {
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+
+    .button-app {
+        width: 55px;
+        padding: 15px 10px;
+    }
+}
+
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .footer {
+        background-image: url(../images/game_1280.jpg);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+    /* ========HEADER======== */
+
+    .surface-logo-text {
+        width: 205px;
+    }
+
+    .header {
+        background-image: url(../images/football_1280.jpg);
+        padding-top: 40px;
+    }
+
+    .welcome-title {
+        padding-top: 180px;
+        padding-bottom: 180px;
+        font-size: 64px;
+    }
+
+    .title-first {
+        padding-left: 8%;
+    }
+
+    .title-second {
+        padding-left: 20%;
+    }
+
+    .text-item-wrapper {
+        padding-left: 33px;
+        padding-right: 33px;
+    }
+
+    .specification-item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .text-item-title {
+        font-size: 32px;
+    }
+
+    /* ========CONTENT======== */
+
+    .kid-sport-title {
+        padding-left: 38%;
+        padding-top: 75px;
+        padding-bottom: 15px;
+    }
+
+    .kid-sport-image {
+        top: 95px;
+    }
+
+    .number-item-title {
+        font-size: 14px;
+    }
+
+    .item-title {
+        padding-left: 38%;
+    }
+
+    .text-item-description{
+        padding-left: 38%;
+        font-size: 16px;
+    }
+
+    .kid-sport-image-basket {
+        left: 45%;
+    }
+
+    .text-item-description-basket {
+        padding-right: 45%;
+        padding-left: 0;
+    }
+
+    .section-be-active {
+        display: block;
+    }
+
+    .property-item {
+        display: block;
+    }
+
+    .property-image {
+        max-width: 100%;
+    }
+
+    .property-item-images {
+        max-width: 100%;
+    }
+
+    .property-item-text {
+        margin-top: 90px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 33px;
+        padding-right: 33px;
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+
+    .property-item-text-description {
+        margin-top: 35px;
+        font-size: 24px;
+    }
+
+    .property-item-text-title {
+        font-size: 80px;
+    }
+
+    .property-item-number {
+        left: 33px;
+        margin-top: -100px;
+        font-size: 24px;
+    }
+
+    /* ========FOOTER======== */
+
+    .footer {
+        background-image: url(../images/game_767.jpg);
+    }
+
+    .logo-footer {
+        padding-top: 50px;
+    }
+
+    .button-description {
+        font-size: 36px;
+    }
+
+    .button-download-description {
+        line-height: 80px;
+    }
+
+    .button-download-app {
+        display: block;
+    }
+
+    .button-download-app {
+        display: block;
+        text-align: center;
+        padding-top: 125px;
+        padding-bottom: 280px;
+    }
+
+    .button-app {
+        margin-bottom: 75px;
+        padding: 25px 15px;
+    }
+
+    .button-download-label-footer {
+        padding-left: 0;
+    }
+
+    .logo-footer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 710px) {
+    .button-download-description {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .button-description {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 961px) {
+    .surface-logo-text {
+        width: 190px;
+    }
+
+    .welcome-title {
+        padding-top: 200px;
+        padding-bottom: 220px;
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1400px) {
+    .welcome-title {
+        font-size: 64px;
+    }
+
+    .property-item-text{
+        margin-top: 100px;
+    }
+
+    .property-item-text-reverse {
+        margin-left: 60px;
+    }
+
+    .property-item-text-title {
+        font-size: 60px;
+    }
+
+    .property-item-number {
+        margin-top: 90px;
+        font-size: 16px;
+        left: calc(50% - 60px);
+    }
+
+    .property-item-text-description {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}
+
